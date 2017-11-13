@@ -1,0 +1,60 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.axf
+
+*.__i
+*.crf
+*.d
+*.htm
+
+*.map
+
+*.iex
+*.lnp
+*.sct
+*.dep
+*.lst
+*.manifest
+*.cache
+*.pdb
+*.administrator
+*.ini
+*.scvd
+*.dbgconf
+*.icf
+*.resources
+*.uvoptx
+*.suo
+*.user
+*.config
+
+*.txt
+*.bin
+*.bak
