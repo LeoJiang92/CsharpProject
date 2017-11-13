@@ -1,0 +1,35 @@
+﻿<Window x:Class="FKJDebugProgram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="发证机调试程序(WPF版)" Height="750" Width="1200">
+    <Grid>
+        <TabControl Margin="10,10,0,0" HorizontalAlignment="Left" Height="119.075" VerticalAlignment="Top" Width="220">
+            <TabItem Header="USB连接">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="串口连接">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <TreeView HorizontalAlignment="Left" Margin="10,134.075,0,10" Width="220">
+            <TreeViewItem Header="硬件的调节">
+            </TreeViewItem>
+            <TreeViewItem Header="传感器检测">
+            </TreeViewItem>
+            <TreeViewItem Header="参数校正">
+                <TreeViewItem Header="X轴坐标"/>
+                <TreeViewItem Header="Y轴坐标"/>
+                <TreeViewItem Header="设备串口号"/>
+                <TreeViewItem Header="其他"/>
+            </TreeViewItem>
+            <TreeViewItem Header="整体测试">
+            </TreeViewItem>
+            <TreeViewItem Header="外设硬件测试">
+                <TreeViewItem Header="身份证阅读器（ICR-100M）"/>
+                <TreeViewItem Header="指纹识别仪（TFS-S750）"/>
+                <TreeViewItem Header="嵌入式微型扫描器（ES4600AT-SR）"/>
+                <TreeViewItem Header="摄像头（C525）"/>
+            </TreeViewItem>
+        </TreeView>
+    </Grid>
+</Window>
