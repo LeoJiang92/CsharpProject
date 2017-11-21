@@ -3,15 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="发证机调试程序(WPF版)" Height="750" Width="1200">
     <Grid>
-        <TabControl Margin="10,10,0,0" HorizontalAlignment="Left" Height="119.075" VerticalAlignment="Top" Width="220">
-            <TabItem Header="USB连接">
-                <Grid Background="#FFE5E5E5"/>
+        <TabControl Margin="10,31,0,0" HorizontalAlignment="Left" Height="119.075" VerticalAlignment="Top" Width="220" >
+            <TabItem Header="USB连接" Margin="0,0,0,0">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                </Grid>
             </TabItem>
             <TabItem Header="串口连接">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <TreeView HorizontalAlignment="Left" Margin="10,134.075,0,10" Width="220">
+        <TreeView HorizontalAlignment="Left" Width="220" Margin="10,135,0,10">
             <TreeViewItem Header="硬件的调节">
             </TreeViewItem>
             <TreeViewItem Header="传感器检测">
@@ -31,5 +36,26 @@
                 <TreeViewItem Header="摄像头（C525）"/>
             </TreeViewItem>
         </TreeView>
+        <TabControl HorizontalAlignment="Left" Height="679" Margin="940,31,0,0" VerticalAlignment="Top" Width="242">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="31*"/>
+                        <RowDefinition Height="637*"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Margin="235,22,0,0" VerticalAlignment="Top" Height="688" Width="700" RenderTransformOrigin="0.5,0.5"/>
+        <Menu HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="1192">
+            <Button Content="连接"/>
+        </Menu>
     </Grid>
 </Window>
